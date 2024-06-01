@@ -26,13 +26,13 @@
         }
 
         .anthony {
-    font-family: 'Brush Script MT', cursive;
-    font-size: 10vw; /* Utilizando 5vw para ajustar o tamanho do texto de acordo com a largura da viewport */
-    color: #e6feff; /* Amarelo bebê */
-    text-align: center;
-    letter-spacing: 2px;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5), 0 -2px 0 rgba(0,0,0,0.5);
-}
+            font-family: 'Brush Script MT', cursive;
+            font-size: 6vw; /* Tamanho do texto responsivo para o título "Anthony's Site" */
+            color: #e6feff; /* Amarelo bebê */
+            text-align: center;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5), 0 -2px 0 rgba(0,0,0,0.5);
+        }
 
 
         header {
@@ -44,7 +44,7 @@
         }
 
         nav {
-            width: 80%;
+            width: 70%; /* Reduzindo a largura para garantir que todos os links se ajustem */
             margin: 0 auto;
             display: flex;
             justify-content: space-between;
@@ -52,48 +52,50 @@
         }
 
         nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 90%; /* Reduzido para 90% para evitar que os itens se espalhem muito em telas pequenas */
-    margin: 0 auto; /* Centraliza o menu */
-    flex-wrap: wrap; /* Permite que os itens quebrem para uma nova linha quando necessário */
-}
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
 
-nav ul li {
-    text-align: center;
-    margin: 5px 0; /* Espaçamento entre os itens */
-    flex: 1; /* Define a largura igual para todos os itens */
-}
+        nav ul li {
+            flex-grow: 1;
+            text-align: center;
+            margin: 0px 1px;
+        }
 
-nav ul li a {
-    color: #333; /* Cor de texto padrão */
-    text-decoration: none;
-    font-family: 'Brush Script MT', cursive;
-    letter-spacing: 2px;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-    display: block;
-    background-color: #e1fafc; /* Amarelo bebê */
-    transition: background-color 0.3s;
-    height: 26px;
-    line-height: 26px;
-    border-radius: 2px;
-    box-shadow: inset 3px 3px 6px rgba(0, 0, 0, 0.3);
-    width: calc(100% - 10px); /* Subtrai a margem dos itens */
-}
+        nav ul li a {
+            color: #333; /* Cor de texto padrão */
+            text-decoration: none;
+            font-family: 'Brush Script MT', cursive;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            display: block;
+            background-color: #e1fafc; /* Amarelo bebê */
+            transition: background-color 0.3s;
+            height: 26px;
+            margin-top: 2px;
+            line-height: 26px;
+            border-radius: 2px;
+            box-shadow: inset 3px 3px 6px rgba(0, 0, 0, 0.3);
+            font-size: 2vw; /* Tamanho do texto responsivo para os links */
+        }
 
-/* Estilo para o item selecionado */
-nav ul li a.selected {
-    background-color: #751313; /* Cor de texto padrão */
-}
-
+        nav ul li a.selected {
+            background-color: #751313; /* Cor de texto padrão */
+        }
 
         nav ul li a:hover {
             background-color: #431e86; /* Lilás bebê */
         } 
+
+            /* Ajustando a largura do contêiner de navegação para dispositivos móveis */
+        @media (min-width: 768px) {
+            nav {
+                width: 90%;
 
         .container-apresentacao {
             width: 80%;
@@ -136,7 +138,6 @@ nav ul li a.selected {
         h1 {
             text-align: left;
             color: #00666b; /* Azul bebê */
-            /*text-shadow: 2px 2px 4px rgba(0,0,0,0.5);*/
         }
 
         h2 {
