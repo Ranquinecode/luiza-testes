@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anthony Site</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff; /* Azul bebê */
+            color: #333; /* Cor de texto padrão */
+            font-family: Arial, sans-serif;
+        }
+
+        .container-anthony {
+            position: relative;
+            margin: 0 auto;
+            width: 90%;
+            height: 70px;
+            background-color: #09f2fd; /* Azul bebê */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: inset 3px 3px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        .anthony {
+            font-family: 'Brush Script MT', cursive;
+            font-size: 60px;
+            color: #e6feff; /* Amarelo bebê */
+            text-align: center;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5), 0 -2px 0 rgba(0,0,0,0.5);
+        }
+
+        header {
+            width: 90%;
+            margin: 0 auto;
+            height: 30px;
+            background-color: #e1fafc; /* Lilás bebê */
+            border-radius: 0px 0px 5px 5px;
+        }
+
+        nav {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+
+        nav ul li {
+            flex-grow: 1;
+            text-align: center;
+            margin: 0px 1px;
+        }
+
+        nav ul li a {
+            color: #333; /* Cor de texto padrão */
+            text-decoration: none;
+            font-family: 'Brush Script MT', cursive;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            display: block;
+            background-color: #e1fafc; /* Amarelo bebê */
+            transition: background-color 0.3s;
+            height: 26px;
+            margin-top: 2px;
+            line-height: 26px;
+            border-radius: 2px;
+            box-shadow: inset 3px 3px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        nav ul li a:hover {
+            background-color: #431e86; /* Lilás bebê */
+        }
+
+        nav ul li a.selected {
+            background-color: #751313; /* Cor de texto padrão */
+        }   
+
+        .container-apresentacao {
+            width: 80%;
+            margin: 0 auto;
+            margin-bottom: 20px; /* Para adicionar algum espaço entre o container de apresentação e os demais elementos */
+            text-align: justify; /* Para justificar o texto dentro do contêiner */
+        }
+
+        .container-blocos {
+            width: 90%;
+            background-color: #e1fafc; /* Lilás bebê */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .texto-container,
+        .video-container {
+            width: 48%;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #ffffff;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            box-sizing: border-box;
+        }
+
+        .texto-container {
+            margin-right: 5px;
+        }
+
+        .video-container {
+            margin-left: 5px;
+        }
+
+        h1 {
+            text-align: left;
+            color: #00666b; /* Azul bebê */
+            /*text-shadow: 2px 2px 4px rgba(0,0,0,0.5);*/
+        }
+
+        h2 {
+            font-size: 20px;
+            text-align: left;
+            color: #8fbcbe; /* Azul bebê */
+        }
+
+        p {
+            text-align: left;
+            color: #7f7f7f; /* Cor de texto padrão */
+        }
+    </style>
+</head>
+<body>
+<div class="container-anthony">
+    <div class="anthony">
+        Anthony's Site
+    </div>
+</div>
+<header>
+    <nav>
+        <ul>
+            <li><a id="link1" href="luiza-page.html" class="button">Luiza's Site</a></li>
+            <li><a href="#" class="button">Link 2(vazio)</a></li>
+            <li><a href="#" class="button">Link 3(vazio)</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <div class="container-apresentacao">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut ultricies lorem. Fusce dapibus, justo sit amet ultrices tempor, sapien velit fermentum libero, et hendrerit odio purus id libero.</p>
+        <p>Nulla facilisi. Vestibulum id justo vitae metus pharetra mollis. Sed venenatis euismod nisl, sit amet egestas libero tincidunt vitae.</p>
+        <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Integer in libero diam. Vestibulum vehicula quam nec tortor suscipit, vitae consequat mauris ullamcorper.</p>
+    </div>
+    <div class="container-blocos">
+        <div class="texto-container">
+            <h1>Lutar pelo que é meu</h1>
+            <h2>Canção de Charlie Brown Jr.</h2>
+            <div class="lyrics">
+                <p>Água pedra mole dura<br>
+                    bunda bate até te fura</p>
+            </div>
+        </div>
+        <div class="video-container">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+    <div class="container-blocos">
+        <div class="video-container">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="texto-container">
+            <h1>Outro Título de Texto</h1>
+            <p>Conteúdo do segundo texto...</p>
+        </div>
+    </div>
+    <div class="container-blocos">
+        <div class="texto-container">
+            <h1>Anthony na Laje</h1>
+            <p>Sem camisa, pé preto, se divertindo como se não houvesse amanhã.</p>
+        </div>
+        <div class="video-container">
+            <video controls width="100%" height="315" src="../media/tony.mp4" type="video/mp4"></video>
+        </div>
+    </div>
+</main>
+
+</body>
+</html>

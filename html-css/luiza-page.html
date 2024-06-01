@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luiz Site</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: rgb(0, 0, 0);
+            color: #7c7c90;
+            font-family: Arial, sans-serif;
+        }
+
+        .container-luiza {
+            position: relative;
+            width: 100%;
+            height: 70px; /* altura da div "Luiza" */
+            background-color: #764b8e; /* Cor de fundo do cabeçalho */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: inset 3px 3px 6px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra interna */
+        }
+
+        .luiza {
+            font-family: 'Brush Script MT', cursive;
+            font-size: 60px;
+            color: #edd0ff;
+            text-align: center;
+            letter-spacing: 2px; /* Adiciona um espaçamento entre as letras */
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5), 0 -2px 0 rgba(0,0,0,0.5); /* Adiciona uma sombra ao texto */
+        }
+
+        header {
+            width: 100%; /* Largura do cabeçalho */
+            height: 30px;
+            background-color: #341e40;
+
+        }
+
+        nav {
+            width: 80%; /* Largura do nav */
+            margin: 0 auto; /* Centraliza na tela */
+            display: flex;
+            justify-content: space-between; /* Distribui os itens igualmente */
+            align-items: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: space-between; /* Distribui os itens igualmente */
+            align-items: center;
+            width: 100%; /* Largura total */
+        }
+
+        nav ul li {
+            flex-grow: 1; /* Ocupa o espaço disponível */
+            text-align: center; /* Centraliza o texto */
+            margin: 0px 1px; /* Adiciona um pequeno espaço entre os botões */
+        }
+
+        nav ul li a {
+            color: #ffffff; /* Cor branca */
+            text-decoration: none;
+            font-family: 'Brush Script MT', cursive;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            display: block;
+            background-color:#9652bd; /* Remove a cor de fundo */
+            transition: background-color 0.3s;
+            height: 26px;
+            margin-top: 2px; /* Adiciona uma margem superior de 2px */
+            line-height: 26px; /* Define a altura da linha igual à altura do botão */
+            border-radius: 2px; /* Arredonda as bordas dos botões */
+            box-shadow: inset 3px 3px 6px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra interna */
+        }
+
+        nav ul li a:hover {
+            background-color: #be7ae6; /* Cor do h1 autor */
+        }
+
+        nav ul li a.selected {
+            background-color: #ffffff; /* Cor branca ao ser selecionado */
+        }
+
+        .container-conteudo {
+            width: 80%; /* Largura do conteúdo */
+            background-color: #341e40;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 20px auto; /* Centralizado horizontalmente */
+            box-sizing: border-box;
+        }
+
+        .container-conteudo h1 {
+            text-align: left;
+            margin-left: 20px;
+        }
+
+        .container-conteudo h2 {
+            text-align: left;
+            margin-left: 30px;
+            font-size: 20px;
+        }
+
+        .autor {
+            text-align: left;
+            margin-left: 20px;
+            color: #bd7ae4;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Adiciona uma sombra ao texto */
+        }
+
+        .lyrics p {
+            margin-left: 30px;
+            text-align: center;
+            color: #d1b8e0;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5); /* Adiciona uma sombra ao texto */
+        }
+    </style>
+</head>
+<body>
+
+<div class="container-luiza">
+    <div class="luiza">
+        Luiza's Site
+    </div>
+</div>
+
+<header>
+    <nav>
+        <ul>
+            <li><a href="anthony-page.html" class="button">Anthony</a></li>
+            <li><a href="#" class="button">Link 2(vazio)</a></li>
+            <li><a href="#" class="button">Link 3(vazio)</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <div class="container-conteudo">
+        <h1 class="autor">Lutar pelo que é meu</h1>
+        <h2 class="autor">Canção de Charlie Brown Jr.</h2>
+
+        <div class="lyrics">
+            <p>A gente passa a entender melhor a vida<br>
+                Quando encontra o verdadeiro amor<br>
+                Cada escolha, uma renúncia, isso é a vida<br>
+                Estou lutando pra me recompor</p>
+        </div>
+
+        <div class="lyrics">
+            <p>De qualquer jeito seu sorriso vai ser meu raio de sol<br>
+                De qualquer jeito seu sorriso vai ser meu raio de sol</p>
+        </div>
+
+        <div class="lyrics">
+            <p>O melhor presente Deus me deu<br>
+                A vida me ensinou a lutar pelo que é meu<br>
+                O melhor presente Deus me deu<br>
+                A vida me ensinou a lutar pelo que é meu</p>
+        </div>
+
+        <div class="lyrics">
+            <p>Então deixa eu te beijar até você sentir vontade de tirar a roupa<br>
+                Deixa eu acompanhar esse instinto de aventura, de menina solta<br>
+                Deixa minha estrela orbitar e brilhar no céu da sua boca<br>
+                Deixa eu te mostrar que a vida pode ser melhor, mesmo sendo tão louca</p>
+        </div>
+
+        <div class="lyrics">
+            <p>De qualquer jeito seu sorriso vai ser meu raio de sol<br>
+                De qualquer jeito seu sorriso vai ser meu raio de sol</p>
+        </div>
+
+        <div class="lyrics">
+            <p>O melhor presente Deus me deu<br>
+                A vida me ensinou a lutar pelo que é meu<br>
+                O melhor presente Deus me deu<br>
+                A vida me ensinou a lutar pelo que é meu</p>
+        </div>
+    </div>
+</main>
+
+</body>
+</html>
