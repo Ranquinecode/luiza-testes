@@ -8,46 +8,41 @@
         body {
             margin: 0;
             padding: 0;
-            background-color: #ffffff; /* Cor de fundo branca */
-            color: #333; /* Cor de texto padrão do body */
+            background-color: #ffffff;
+            color: #333;
             font-family: Arial, sans-serif;
         }
 
         .container-anthony {
             margin: 0 auto;
-            width: 90%;
+            width: 100%;
             height: 70px;
-            background-color: #09f2fd; /* cor de fundo do conteiner maior superior */
+            background-color: #09f2fd;
             display: flex;
             justify-content: center;
             align-items: center;
-            box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.3); /* sombra da caixa que abriga o .anthony */
+            box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.3);
         }
 
         .anthony {
             font-family: 'Brush Script MT', cursive;
-            font-size: 3vw; /* Utilizando 5vw para ajustar o tamanho do texto de acordo com a largura da viewport */
-            color: #e6feff; /* Amarelo bebê */
+            font-size: 5vw;
+            color: #e6feff;
             text-align: center;
             letter-spacing: 2px;
-            text-shadow: 4px 4px 8px rgba(0,0,0,0.5),
-}
-
+            text-shadow: 4px 4px 8px rgba(0,0,0,0.5);
+        }
 
         header {
-            width: 90%;
-            margin: 0 auto;
+            width: 100%;
             height: 30px;
-            background-color: #e1fafc; /* Lilás bebê */
+            background-color: #e1fafc;
             border-radius: 0px 0px 5px 5px;
         }
 
         nav {
-            width: 100%;
+            width: 90%;
             margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
         }
 
         nav ul {
@@ -61,41 +56,40 @@
         }
 
         nav ul li {
-            flex-grow: 1;
             text-align: center;
             margin: 0px 1px;
         }
 
         nav ul li a {
-            color: #333; /* Cor de texto padrão */
+            color: #333;
             text-decoration: none;
             font-family: 'Brush Script MT', cursive;
             letter-spacing: 2px;
             text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
             display: block;
-            background-color: #e1fafc; /* Amarelo bebê */
+            background-color: #e1fafc;
             transition: background-color 0.3s;
             height: 26px;
             margin-top: 2px;
             line-height: 26px;
             border-radius: 2px;
-            box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.3); /*sombra da caixa do nav*/
+            box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.3);
         }
 
         nav ul li a.selected {
-            background-color: #2e88ff; /* Cor de texto que será modificado ao selecionar o item */
+            background-color: #2e88ff;
         }
 
         nav ul li a:hover {
-            background-color: #b6faff; /* cor temporária ao passar o mouse sobre os itens */
+            background-color: #b6faff;
         } 
 
         .container-apresentacao {
-            width: 70%;
+            width: 90%;
             margin: 0 auto;
-            margin-bottom: 20px; /* Para adicionar algum espaço entre o container de apresentação e os demais elementos */
-            text-align:justify; /* Para justificar o texto dentro do contêiner */
-            box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.100); /* Sombra interna do contêiner */
+            margin-bottom: 20px;
+            text-align: justify;
+            box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
             padding: 5px;
             border-radius: 5px;
             margin-top: 2px;
@@ -108,76 +102,51 @@
             box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
             box-sizing: border-box;
             display: flex;
+            flex-direction: column;
             align-self: center;
-            margin: auto; /* Alinha ao centro horizontalmente */
+            margin: auto;
             margin-bottom: 10px;
         }
 
-        .texto-container {
-            font-size: 2rem;
-            width: 48%;
-            padding: 60px;
+        .texto-container,
+        .video-container {
+            width: 100%;
+            padding: 20px;
             border-radius: 5px;
-            background-color: #fdfdfd;
             box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
             box-sizing: border-box;
+            margin-bottom: 10px;
         }
-
-        .texto-container h1 {
-            font-size: 3rem;
-        }
-
-        .texto-container h2 {
-            font-size: 1rem;
-        }
-
-        .texto-container p {
-            font-size: 1rem;
-        }
-
-        .video-container {
-            width: 48%;
-            border-radius: 5px;
-            background-color: #000000;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-            box-sizing: border-box;
-        }
-
-        /* .texto-container {                       <<NÃO VI DIFERENÇA NENHUMA AQUI
-            margin-right: 5px;
-        }
-
-        .video-container {
-            margin-left: 5px;
-        } */
 
         h1 {
             text-align: left;
-            color: #00666b; /* cor do texto h1*/
-            /*text-shadow: 2px 2px 4px rgba(0,0,0,0.5);*/
+            color: #00666b;
         }
 
         h2 {
             font-size: 20px;
             text-align: left;
-            color: #8fbcbe; /* cor do texto h2 */
+            color: #8fbcbe;
         }
 
         p {
             text-align: left;
-            color: #7f7f7f; /* Cor de texto parágrafo */
+            color: #7f7f7f;
         }
 
+        iframe,
+        video {
+            width: 100%;
+            height: auto;
+        }
     </style>
 </head>
 <body>
-<!-- ************************Conteiner do Texto do Primeiro Cabeçalho e Cabeçalho********************** -->
 <div class="container-anthony">
     <div class="anthony">
         Anthony's Site
     </div>
 </div>
-<!-- *********************** NAVEGADOR DOS BOTÕES ***** -->
 <header>
     <nav>
         <ul>
@@ -187,19 +156,18 @@
         </ul>
     </nav>
 </header>
+
 <main>
-    <!-- **************************CONTEINER APRESENTACAO--************* -->
     <div class="container-apresentacao">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut ultricies lorem. Fusce dapibus, justo sit amet ultrices tempor, sapien velit fermentum libero, et hendrerit odio purus id libero.</p>
         <p>Nulla facilisi. Vestibulum id justo vitae metus pharetra mollis. Sed venenatis euismod nisl, sit amet egestas libero tincidunt vitae.</p>
         <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Integer in libero diam. Vestibulum vehicula quam nec tortor suscipit, vitae consequat mauris ullamcorper.</p>
     </div>
-    <!-- **************************************--PRIMEIRO CONTEINER BLOCO--************************************************ -->
     <div class="container-fundo-blocos">
         <div class="texto-container">
             <h1>Lutar pelo que é meu</h1>
             <h2>Canção de Charlie Brown Jr.</h2>
-            <div>
+            <div class="lyrics">
                 <p>Água pedra mole dura<br>
                     bunda bate até te fura</p>
             </div>
@@ -207,28 +175,25 @@
         <div class="video-container">
             <iframe width="100%" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
         </div>
-    </div> 
-    <!-- *******************************************--SEGUNDO CONTEINER BLOCO--********************************************* -->
+    </div>
     <div class="container-fundo-blocos">
         <div class="video-container">
             <iframe width="100%" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
         </div>
         <div class="texto-container">
-            <h1> Outro Título de Texto</h1>
-            <p> Conteúdo do segundo texto...</p>
+            <h1>Outro Título de Texto</h1>
+            <p>Conteúdo do segundo texto...</p>
         </div>
     </div>
-    <!-- *******************************************--TERCEIRO CONTEINER BLOCO--******************************************** -->
     <div class="container-fundo-blocos">
         <div class="texto-container">
             <h1>Anthony na Laje</h1>
             <p>Sem camisa, pé preto, se divertindo como se não houvesse amanhã.</p>
         </div>
         <div class="video-container">
-            <video controls width="100%" height="315" src="../media/tony.mp4" type="video/mp4"></video>
+            <video controls width="100%" src="../media/tony.mp4" type="video/mp4"></video>
         </div>
     </div>
-    <!-- ***************************************************************************************************************** -->
 </main>
 
 </body>
